@@ -1,0 +1,777 @@
+.gradient-color {
+	font-family: "Helvetica";
+	background: linear-gradient(180deg, rgb(209, 231, 222), rgb(2, 193, 123));
+	background-clip: text;
+	color: transparent;
+}
+.about-hero {
+	padding: 11rem 2rem;
+	background-image: url("./images/header3.png");
+	background-size: cover;
+}
+.about-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 2rem 2rem;
+
+	> h1 {
+		font-size: 4rem;
+		color: var(--text);
+	}
+
+	> .content {
+		width: 78%;
+		margin: 2rem auto;
+		> small {
+			font-size: 1.2rem;
+			letter-spacing: 2px;
+			word-spacing: 3px;
+			font-family: "Montserrat";
+			font-weight: 600;
+		}
+	}
+}
+
+@media screen and (max-width: 749px) {
+	.about-hero {
+		padding: 10rem 2rem;
+		background-image: url("./images/header1.png");
+		background-size: cover;
+	}
+}
+@media screen and (max-width: 600px) {
+	.about-hero {
+		padding: 11rem 2rem;
+		background-image: url("./images/header2.png");
+		background-size: cover;
+	}
+}
+
+/* All payment and financial Solution */
+
+.about-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 2rem;
+	padding: 2rem;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	/* background-color: red; */
+	.flex-left-content {
+		width: 40%;
+	}
+
+	img {
+		width: 100%;
+		/* height: 100%; */
+		border-radius: 11px;
+	}
+}
+
+.flex-right-content {
+	/* margin: 2.5em; */
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+		text-wrap: balance;
+		color: var(--text);
+	}
+
+	> .content {
+		width: 80%;
+		color: var(--text);
+		margin: 2rem auto;
+		text-align: center;
+		> small {
+			font-size: 1rem;
+			text-wrap: balance;
+		}
+	}
+}
+
+/* All payment and financial Solution */
+
+/* The Most Comfortable Way To Make Online Payment */
+
+#sp {
+	background-color: #fcfcfc;
+}
+.comfort-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--text);
+	border-bottom: 1.5px solid #fcfcfc;
+	color: white;
+	box-shadow: 0 0 2px #bcb9b9;
+	.comfort-left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		row-gap: 1rem;
+		> h3 {
+			font-size: 2rem;
+			text-align: center;
+			text-wrap: balance;
+			> span {
+				font-family: "Helvetica";
+			}
+		}
+
+		article {
+			width: 80%;
+			font-family: "Montserrat";
+			text-align: center;
+			font-weight: 500;
+			margin: 1rem 0;
+			> small {
+				font-size: 1rem;
+				text-wrap: balance;
+			}
+		}
+	}
+
+	.comfort-right {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--text);
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	/* sp right */
+	#sp-left {
+		padding: 2rem 0;
+	}
+	#sp-right {
+		color: var(--text);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		/* padding: 1rem 0; */
+		row-gap: 0;
+		> h3 {
+			text-align: center;
+			text-wrap: balance;
+			font-size: 1.8rem;
+			> span {
+				font-family: "Helvetica";
+			}
+		}
+		> .content {
+			width: 86%;
+			margin: 1rem 0;
+			font-size: 1rem;
+		}
+		> .stats {
+			display: flex;
+			align-items: center;
+			text-align: center;
+			flex-direction: row;
+
+			> .stats-1 {
+				margin-right: 2em;
+				margin-top: 2em;
+				margin-bottom: 2em;
+				padding: 1em;
+				background-color: var(--primary);
+				border-radius: 10px;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+}
+
+/* The Most Comfortable Way To Make Online Payment END */
+
+/* Customized And Control Your Own Credit Card */
+
+/* .about-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+	padding: 2rem 1rem;
+	width: 100%;
+	.about-left {
+		width: 50%;
+		height: 100%;
+		padding: 0 3rem;
+		background-color: red;
+		> .about-image-container {
+			width: 80%;
+			height: 100%;
+			position: relative;
+			background-color: green;
+			> img {
+				width: 70%;
+				position: absolute;
+				top: 50%;
+				right: -0%;
+				translate: 0% -50%;
+			}
+		}
+	}
+	.about-right {
+		width: 50%;
+	}
+} */
+
+/* Customized And Control Your Own Credit Card END */
+
+/* Become Our Loyal Customer, Reach Our Team Right Now */
+
+.reach-out-banner {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 2rem;
+	align-items: center;
+	background-color: var(--background);
+	color: var(--text);
+	padding: 4rem 0;
+
+	h3 {
+		/* padding-top: 3em; */
+		font-size: 2.3rem;
+		text-wrap: balance;
+		width: 80%;
+		text-align: center;
+	}
+
+	> article {
+		text-align: center;
+		width: 60%;
+		> small {
+			font-size: 1.2rem;
+			font-family: "Montserrat";
+		}
+	}
+
+	button {
+		padding: 1.2em 3em;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+		color: white;
+		background-color: rgb(2, 193, 123);
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	}
+}
+
+/* Become Our Loyal Customer, Reach Our Team Right Now End */
+
+/* Behind the Desk Start */
+
+.behind-desk {
+	display: flex;
+	padding: 3rem 5rem;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	width: 100%;
+	> div {
+		width: 50%;
+	}
+	> .left-portion {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		row-gap: 2rem;
+		> h3 {
+			font-size: 2.5rem;
+			font-family: "Montserrat";
+			> span {
+				font-family: "Montserrat";
+			}
+		}
+		> article {
+			width: 100%;
+			text-align: left;
+			font-family: "Montserrat";
+			> small {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	> .right-portion {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		> button {
+			padding: 1rem 3rem;
+			font-size: 1rem;
+			color: #fcfcfc;
+			background-color: var(--primary);
+			border-radius: 8px;
+			border: none;
+			outline: none;
+		}
+	}
+}
+
+.meetTeam {
+	padding: 1rem 0;
+	> h2 {
+		text-align: center;
+	}
+	.team-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 3rem 1rem;
+		gap: 2rem;
+		width: 100%;
+		/* position: relative; */
+
+		> .team-images {
+			position: relative;
+			max-width: 320px;
+			background-color: green;
+			width: 39%;
+			> img {
+				width: 100%;
+			}
+		}
+
+		h5 {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: rgba(255, 255, 255, 1);
+			padding: 10px;
+			text-align: center;
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+/* Behind the Desk END  */
+
+/* !?  Media Queries */
+
+@media screen and (max-width: 1110px) {
+	/*  !  about flex */
+	.about-flex {
+		gap: 0rem;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		.flex-right-content {
+			width: 100%;
+			h2 {
+				text-align: center;
+				width: 100%;
+				font-size: 2rem;
+			}
+
+			> .content {
+				width: 80%;
+				> small {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1000px) {
+	/*  !  about flex */
+	.about-flex {
+		.flex-right-content {
+			h2 {
+				font-size: 1.7rem;
+			}
+
+			> .content {
+				margin: 1rem auto;
+				> small {
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+	/* ! confort container */
+
+	.comfort-container {
+		.comfort-left {
+			> h3 {
+				font-size: 1.6rem;
+			}
+
+			article {
+				width: 90%;
+				> small {
+					font-size: 0.8rem;
+				}
+			}
+		}
+		/* sp right */
+		#sp-left {
+			padding: 2rem 0;
+		}
+		#sp-right {
+			row-gap: 1rem;
+			> h3 {
+				font-size: 1.6rem;
+				> span {
+					font-family: "Helvetica";
+				}
+			}
+			> .content {
+				width: 90%;
+				margin: 1rem 0;
+				margin-bottom: 0.2rem;
+				font-size: 1.2rem;
+			}
+			> .stats {
+				> .stats-1 {
+					margin-right: 1rem;
+					margin-top: 0rem;
+					margin-bottom: 0rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.comfort-container {
+		.comfort-left {
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.2rem;
+			}
+
+			article {
+				width: 95%;
+				> small {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		/* sp right */
+		#sp-left {
+			padding: 2rem 0;
+		}
+		#sp-right {
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.2rem;
+			}
+			> .content {
+				width: 95%;
+				margin-bottom: 0rem;
+				font-size: 1rem;
+			}
+			> .stats {
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	/* ! reach out banner */
+
+	.reach-out-banner {
+		row-gap: 2rem;
+		padding: 4rem 0;
+
+		h3 {
+			/* padding-top: 3em; */
+			font-size: 2rem;
+		}
+
+		> article {
+			width: 80%;
+			> small {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 730px) {
+	/*  !  about flex */
+	.about-flex {
+		.flex-right-content {
+			h2 {
+				font-size: 1.3rem;
+			}
+
+			> .content {
+				width: 95%;
+				margin: 0.5rem auto;
+				> small {
+					letter-spacing: 0.5px;
+					word-spacing: 1px;
+					font-size: 0.7rem;
+				}
+			}
+		}
+	}
+	/* ! confort container */
+	.comfort-container {
+		.comfort-left {
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.2rem;
+			}
+
+			article {
+				width: 95%;
+				> small {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		/* sp right */
+		#sp-left {
+			padding: 2rem 2rem;
+		}
+		#sp-right {
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.2rem;
+			}
+			> .content {
+				width: 95%;
+				margin-bottom: 0rem;
+				font-size: 0.7rem;
+			}
+			> .stats {
+				font-size: 0.8rem;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+				> .stats-1 {
+					padding: 1rem;
+					border-radius: 5px;
+				}
+			}
+			> button {
+				padding: 1rem;
+				cursor: pointer;
+				&:hover {
+					background: transparent;
+					scale: 1.1;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	/*  !  about flex */
+	.about-flex {
+		padding: 1rem;
+		margin-bottom: 1rem;
+		flex-direction: column;
+		.flex-left-content {
+			width: 100%;
+		}
+		.flex-left-content {
+			width: 60%;
+			margin-bottom: 2rem;
+		}
+		.flex-right-content {
+			h2 {
+				font-size: 1.6rem;
+				margin-bottom: 1rem;
+			}
+
+			> .content {
+				width: 87%;
+				margin: 0.5rem auto;
+				margin-bottom: 1rem;
+				> small {
+					letter-spacing: 1px;
+					word-spacing: 2px;
+					font-size: 1rem;
+				}
+			}
+		}
+
+		/* ! reach out banner */
+
+		.reach-out-banner {
+			row-gap: 1rem;
+			padding: 2rem 0;
+
+			> .bannertxt {
+				font-size: 1rem !important;
+				width: 100%;
+			}
+
+			> article {
+				width: 92%;
+				> small {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	/* ! confort container */
+	.comfort-container {
+		flex-direction: column;
+		background-color: #fff !important;
+		/* box-shadow: none; */
+		color: #666;
+		.comfort-right {
+			padding: 2rem;
+			background-color: white;
+			> img {
+				border-radius: 5px;
+				width: 70%;
+			}
+		}
+		.comfort-left {
+			padding: 2rem 1rem;
+			order: 2;
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.6rem;
+			}
+
+			article {
+				width: 95%;
+				> small {
+					font-size: 1rem;
+				}
+			}
+		}
+		/* sp right */
+		#sp-left {
+			order: 1;
+			padding: 2rem 2rem;
+		}
+		#sp-right {
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.6rem;
+			}
+			> .content {
+				width: 95%;
+				margin-bottom: 0rem;
+				font-size: 0.8rem;
+			}
+			> .stats {
+				> .stats-1 {
+					padding: 1rem;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	/*  !  about flex */
+	.about-flex {
+		margin-bottom: 1rem;
+		.flex-left-content {
+			width: 100%;
+		}
+		.flex-left-content {
+			width: 70%;
+		}
+		.flex-right-content {
+			h2 {
+				font-size: 1.2rem;
+			}
+
+			> .content {
+				width: 89%;
+				> small {
+					letter-spacing: 1px;
+					word-spacing: 1px;
+					font-size: 0.7rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/*  !  hero sectio */
+	.about-header {
+		padding: 6rem 1rem;
+		> h1 {
+			font-size: 3rem;
+		}
+
+		> .content {
+			width: 85%;
+			> small {
+				font-size: 0.8rem;
+				letter-spacing: 1px;
+				word-spacing: 3px;
+				font-family: "Montserrat";
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	/* ! confort container */
+	.comfort-container {
+		flex-direction: column;
+		background-color: #fff !important;
+		/* box-shadow: none; */
+		color: #666;
+		.comfort-right {
+			padding: 2rem;
+			background-color: white;
+			> img {
+				border-radius: 5px;
+				width: 100%;
+			}
+		}
+		.comfort-left {
+			padding: 2rem 1rem;
+			order: 2;
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.2rem;
+			}
+
+			article {
+				width: 95%;
+				> small {
+					font-size: 1rem;
+				}
+			}
+		}
+		#sp-right {
+			row-gap: 0rem;
+			> h3 {
+				font-size: 1.2rem;
+			}
+			> .content {
+				width: 89%;
+				margin-bottom: 0rem;
+				font-size: 1rem;
+			}
+		}
+	}
+}
