@@ -32,7 +32,7 @@
                     <ul class="menu-items" id="nav-items">
                          <li><a href="./index.html">Home</a></li>
                          <li><a href="./about.html">About Us</a></li>
-                         <li><a href="./service.html">Services</a></li>
+                         <li><a href="./services.html">Services</a></li>
                          <li><a href="./contact.html">Contact Us</a></li>
                     </ul>
                </div>
@@ -53,8 +53,8 @@
                                              <div id="form-message-success" class="mb-4">
                                                   Your message was sent, thank you!
                                              </div>
-                                             <form method="POST" id="contactForm" name="contactForm"
-                                                  class="contactForm">
+                                             <form onsubmit="event.preventDefault(); SendMail();" id="contactForm"
+                                                  name="contactForm" class="contactForm">
                                                   <div class="row">
                                                        <div class="col-md-6">
                                                             <div class="form-group">
@@ -66,8 +66,9 @@
                                                        <div class="col-md-6">
                                                             <div class="form-group">
                                                                  <label class="label" for="email">Email Address</label>
-                                                                 <input type="email" class="form-control" name="email"
-                                                                      id="email_id" placeholder="Your Email">
+                                                                 <input type="email" class="form-control"
+                                                                      name="email_id" id="email_id"
+                                                                      placeholder="Your Email">
                                                             </div>
                                                        </div>
                                                        <div class="col-md-12">
@@ -87,8 +88,8 @@
                                                        </div>
                                                        <div class="col-md-12">
                                                             <div class="form-group">
-                                                                 <input onclick="SendMail()" type="submit"
-                                                                      value="Send Message" class="btn btn-primary">
+                                                                 <input type="submit" value="Send Message"
+                                                                      class="btn btn-primary">
                                                                  <div class="submitting"></div>
                                                             </div>
                                                        </div>
@@ -162,10 +163,10 @@
                </ul>
           </div>
           <div class="footerBottom">
-               <h4>© 2022 Credigi Template by Jegtheme</h4>
+               <h4>KOLKATTA, DELHI NCR</h4>
                <ul class="example-2">
                     <li class="icon-content">
-                         <a data-social="spotify" aria-label="Spotify" href="https://www.spotify.com/">
+                         <a data-social="spotify" aria-label="Spotify" href="https://instagram.com">
                               <div class="filled"></div>
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
                                    <path
@@ -175,7 +176,7 @@
                          <div class="tooltip">Instagram</div>
                     </li>
                     <li class="icon-content">
-                         <a data-social="pinterest" aria-label="Pinterest" href="https://www.pinterest.com/">
+                         <a data-social="pinterest" aria-label="Pinterest" href="https://www.facebook.com/">
                               <div class="filled"></div>
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                    <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -186,7 +187,7 @@
                          <div class="tooltip">Facebook</div>
                     </li>
                     <li class="icon-content">
-                         <a data-social="dribbble" aria-label="Dribbble" href="https://dribbble.com/">
+                         <a data-social="dribbble" aria-label="Dribbble" href="https://x.com/">
                               <div class="filled"></div>
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                    <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.   -->
@@ -212,14 +213,20 @@
           </div>
      </footer>
 
-     <script src="js/jquery.min.js"></script>
-     <script src="js/popper.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.validate.min.js"></script>
-     <script
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-     <script src="js/google-map.js"></script>
-     <script src="js/main.js"></script>
+     <!-- <script src="js/jquery.min.js"></script> -->
+     <!-- <script src="js/popper.js"></script> -->
+     <!-- <script src="js/bootstrap.min.js"></script> -->
+     <!-- <script src="js/jquery.validate.min.js"></script> -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+     </script>
+     <script src="./script.js"></script>
+     <script type="text/javascript">
+          (function () {
+               emailjs.init({
+                    publicKey: "3dsPYSJ0xE-3Umofs",
+               });
+          })();
+     </script>
 
 </body>
 

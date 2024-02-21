@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .services {
 	max-width: 1440px;
 	padding: 0rem 0rem;
@@ -74,10 +81,17 @@
 	}
 }
 .service_cards_Container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	gap: 2rem;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	position: static;
 }
@@ -102,20 +116,38 @@
 }
 .service_steps {
 	padding: 4rem 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	gap: 2rem;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	position: static;
 	> .step {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 1rem 1rem;
 		max-width: 400px;
 		min-width: 290px;
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
 		transition: all 0.4s;
 		width: 30%;
 		height: 260px;
@@ -160,9 +192,18 @@
 	/* height: 80%; */
 	margin: 2rem 0;
 	/* background-color: red; */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	row-gap: 2rem;
 	padding: 2rem;
@@ -171,17 +212,32 @@
 		padding: 1rem 2rem;
 		background-color: var(--background);
 
+		-webkit-box-shadow: 0 0 2px 0 #888;
+
 		box-shadow: 0 0 2px 0 #888;
 		border-radius: 5px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		> .accordion_heading {
 			cursor: pointer;
 			width: 100%;
 			/* padding: 1rem 2rem; */
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
 			justify-content: space-between;
 			> h3 {
 				font-size: 1.5rem;
@@ -196,6 +252,8 @@
 		> .accordion_show {
 			width: 100%;
 			padding: 1rem 0;
+			-webkit-transition: all 0.6s;
+			-o-transition: all 0.6s;
 			transition: all 0.6s;
 			display: none;
 			overflow: hidden;
@@ -229,8 +287,14 @@
 		border-radius: 9px;
 		/* box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205); */
 		padding: 4px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		/* background-color: var(--primary); */
 
@@ -250,9 +314,12 @@
 	}
 
 	.plan .inner {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		background-size: cover;
 		background-position: center;
+		-ms-flex-pack: distribute;
 		justify-content: space-around;
 		padding: 1rem 1.5rem;
 		/* background-color: var(--text); */
@@ -260,7 +327,12 @@
 		border-radius: 5px;
 		position: relative;
 		height: 420px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		/* background-color: rgba(0, 0, 0, 0.091); */
 	}
@@ -315,16 +387,31 @@
 		/* color: var(--text); */
 	}
 	.plan .features {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
 		align-items: flex-start;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
 		width: fit-content;
 		margin: 1rem auto;
 	}
 
 	.plan .features li {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		gap: 1rem;
 	}
@@ -335,8 +422,14 @@
 
 	.plan .features .icon {
 		background-color: var(--primary);
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
 		display: inline-flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		color: var(--primary);
 		border-radius: 50%;
@@ -366,8 +459,14 @@
 
 	.plan .action {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
 		justify-content: end;
 	}
 
@@ -384,6 +483,8 @@
 		width: 100%;
 		padding: 0.625em 0.75em;
 		text-decoration: none;
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
 		transition: all 0.3s;
 	}
 
@@ -408,18 +509,34 @@
 	}
 	.service_accordion_container {
 		margin: 2rem 0;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 0.5rem;
 		> .accordion {
 			padding: 1rem 1rem;
 			background-color: var(--background);
 
+			-webkit-box-shadow: 0 0 2px 0 #888;
+
 			box-shadow: 0 0 2px 0 #888;
 			border-radius: 5px;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
 			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
 			> .accordion_heading {
 				cursor: pointer;
@@ -560,18 +677,34 @@
 	}
 	.service_accordion_container {
 		margin: 1rem 0;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 1rem 0rem;
 		> .accordion {
 			padding: 1rem 0.8rem;
 			background-color: var(--background);
 
+			-webkit-box-shadow: 0 0 2px 0 #888;
+
 			box-shadow: 0 0 2px 0 #888;
 			border-radius: 5px;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
 			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
 			> .accordion_heading {
 				cursor: pointer;

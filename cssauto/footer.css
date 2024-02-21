@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .footer {
 	width: 100%;
 	background-color: var(--text);
@@ -7,11 +14,18 @@
 	> div {
 		width: 100%;
 		padding: 1rem 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 	.footerTop {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		> img {
 			width: 6%;
@@ -21,14 +35,21 @@
 			color: var(--primary);
 		}
 		> ul {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
 			justify-content: center;
 			text-decoration: none;
 			gap: 1rem;
 		}
 	}
 	.footerBottom {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding-top: 1rem;
 		border-top: 1px solid #fcfcfc;
@@ -48,8 +69,14 @@
 	}
 
 	.example-2 {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 	.example-2 .icon-content {
@@ -60,6 +87,8 @@
 		position: absolute;
 		top: -30px;
 		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
 		transform: translateX(-50%);
 		color: #fff;
 		padding: 6px 10px;
@@ -67,6 +96,8 @@
 		opacity: 0;
 		visibility: hidden;
 		font-size: 14px;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
 	.example-2 .icon-content:hover .tooltip {
@@ -77,17 +108,26 @@
 	.example-2 .icon-content a {
 		position: relative;
 		overflow: hidden;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
 		color: #4d4d4d;
 		background-color: #fff;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
 	.example-2 .icon-content a:hover {
+		-webkit-box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 		box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 	}
 	.example-2 .icon-content a svg {
@@ -107,6 +147,8 @@
 		width: 100%;
 		height: 0;
 		background-color: #000;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
 	.example-2 .icon-content a:hover .filled {
@@ -156,8 +198,15 @@
 @media (max-width: 649px) {
 	.footer {
 		> div {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
 			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
 			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
 			justify-content: center;
 			row-gap: 1rem;
 			padding: 1rem 0;

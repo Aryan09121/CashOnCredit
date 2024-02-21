@@ -1,5 +1,13 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *::after,
 *::before {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -33,23 +41,37 @@ header {
 }
 
 .navbar-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	height: 64px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	padding-top: 1rem;
 }
 
 .menu-items {
+	-webkit-box-ordinal-group: 3;
+	-ms-flex-order: 2;
 	order: 2;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	min-width: 50%;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	&::-webkit-scrollbar {
 		display: none;
 	}
 }
 .logo {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 1;
 	order: 1;
 	font-size: 2.3rem;
 	width: 20%;
@@ -69,6 +91,8 @@ header {
 	color: #fff;
 	text-decoration: none;
 	font-weight: 500;
+	-webkit-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
 	font-family: "Helvetica";
 }
@@ -113,8 +137,15 @@ header {
 		top: 20px;
 		right: 20px;
 		z-index: 2;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 
@@ -127,30 +158,60 @@ header {
 	}
 
 	.navbar-container .hamburger-lines .line1 {
+		-webkit-transform-origin: 0% 0%;
+		-ms-transform-origin: 0% 0%;
 		transform-origin: 0% 0%;
+		-webkit-transition: -webkit-transform 0.3s ease-in-out;
+		transition: -webkit-transform 0.3s ease-in-out;
+		-o-transition: transform 0.3s ease-in-out;
 		transition: transform 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	}
 
 	.navbar-container .hamburger-lines .line2 {
+		-webkit-transition: -webkit-transform 0.2s ease-in-out;
+		transition: -webkit-transform 0.2s ease-in-out;
+		-o-transition: transform 0.2s ease-in-out;
 		transition: transform 0.2s ease-in-out;
+		transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 	}
 
 	.navbar-container .hamburger-lines .line3 {
+		-webkit-transform-origin: 0% 100%;
+		-ms-transform-origin: 0% 100%;
 		transform-origin: 0% 100%;
+		-webkit-transition: -webkit-transform 0.3s ease-in-out;
+		transition: -webkit-transform 0.3s ease-in-out;
+		-o-transition: transform 0.3s ease-in-out;
 		transition: transform 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	}
 
 	.navbar .menu-items {
 		padding-top: 100px;
 		background: var(--text);
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
 		height: fit-content;
 		max-width: 300px;
+		-webkit-transform: translate(-150%);
+		-ms-transform: translate(-150%);
 		transform: translate(-150%);
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		margin-left: -40px;
 		padding-left: 40px;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+		transition: -webkit-transform 0.5s ease-in-out;
+		-o-transition: transform 0.5s ease-in-out;
 		transition: transform 0.5s ease-in-out;
+		transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+		-webkit-box-shadow: 5px 0px 10px 0px #aaa;
 		box-shadow: 5px 0px 10px 0px #aaa;
 		overflow: scroll;
 
@@ -185,18 +246,26 @@ header {
 	}
 
 	.navbar-container input[type="checkbox"]:checked ~ .menu-items {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
 		transform: translateX(0);
 	}
 
 	.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}
 
 	.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+		-webkit-transform: scaleY(0);
+		-ms-transform: scaleY(0);
 		transform: scaleY(0);
 	}
 
 	.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 }
@@ -211,6 +280,8 @@ header {
 
 @media screen and (max-width: 510px) {
 	.logo {
+		-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
 		order: 1;
 		font-size: 2.3rem;
 		width: 20%;
