@@ -11,7 +11,10 @@
 }
 
 header {
-	position: absolute;
+	position: fixed;
+	background: #fff;
+	top: 0;
+	padding-bottom: 0.5rem;
 	max-width: 1440px;
 	z-index: 100;
 	width: 100%;
@@ -53,7 +56,7 @@ header {
 	order: 1;
 	font-size: 2.3rem;
 	width: 20%;
-	> img {
+	img {
 		width: 60%;
 	}
 }
@@ -66,7 +69,8 @@ header {
 
 .navbar a {
 	/* color: black; */
-	color: #fff;
+	/* color: #fff; */
+	color: #000;
 	text-decoration: none;
 	font-weight: 500;
 	transition: color 0.3s ease-in-out;
@@ -170,7 +174,7 @@ header {
 		> a {
 			color: var(--background) !important;
 			color: #fcfcfc !important;
-			font-size: 1.5rem;
+			font-size: 1.5.logorem;
 		}
 	}
 
@@ -179,7 +183,7 @@ header {
 		top: 10px;
 		left: 20px;
 		font-size: 2.5rem;
-		> img {
+		img {
 			width: 65%;
 		}
 	}

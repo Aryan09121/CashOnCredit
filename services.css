@@ -80,6 +80,163 @@
 	gap: 2rem;
 	flex-wrap: wrap;
 	position: static;
+	> .service_card {
+		background-size: cover;
+		color: white;
+
+		position: relative;
+		width: 31%;
+		min-height: 26rem;
+		max-width: 400px;
+		min-width: 320px;
+		box-shadow: 0 0 2px 1px #000;
+		cursor: pointer;
+		z-index: 9;
+		.service_content {
+			pointer-events: none;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			row-gap: 2rem;
+			flex-direction: column;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			> h3 {
+				font-size: 1.5rem;
+				text-align: center;
+				text-wrap: balance;
+				user-select: none;
+			}
+			> p {
+				text-align: center;
+				letter-spacing: 2px;
+				word-spacing: 1px;
+				user-select: none;
+				width: 85%;
+			}
+			> button {
+				background-color: var(--primary);
+				padding: 1rem 2rem;
+				pointer-events: all;
+				> a {
+					text-decoration: none;
+					color: #fcfcfc;
+				}
+				&:hover {
+					animation: bounce 0.4s linear 0s infinite alternate;
+				}
+			}
+		}
+
+		/* background-color: red; */
+		> .service_overlay {
+			position: absolute;
+			/* border: 2px solid black; */
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #000;
+			opacity: 0.5;
+			object-fit: cover;
+			filter: blur(3px);
+			transition: all 0.5s;
+			/* z-index: 0; */
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+}
+.rotate {
+	transform: rotate(180deg);
+	transition: transform 0.3s ease; /* Optional: Add smooth transition */
+}
+@media screen and (max-width: 380px) {
+	.service_cards_Container {
+		> .service_card {
+			width: 100%;
+			min-height: 26rem;
+			max-width: 500px;
+			min-width: 200px;
+			.service_content {
+				row-gap: 2rem;
+				> h3 {
+					font-size: 1.3rem;
+					text-align: center;
+					text-wrap: balance;
+					user-select: none;
+					width: 85%;
+				}
+				> p {
+					text-align: center;
+					letter-spacing: 2px;
+					word-spacing: 1px;
+					user-select: none;
+					width: 85%;
+				}
+				> button {
+					background-color: var(--primary);
+					padding: 1rem 2rem;
+					pointer-events: all;
+					> a {
+						text-decoration: none;
+						color: #fcfcfc;
+					}
+					&:hover {
+						animation: bounce 0.4s linear 0s infinite alternate;
+					}
+				}
+			}
+
+			/* background-color: red; */
+			> .service_overlay {
+				position: absolute;
+				/* border: 2px solid black; */
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: #000;
+				opacity: 0.5;
+				object-fit: cover;
+				filter: blur(3px);
+				transition: all 0.5s;
+				/* z-index: 0; */
+				&:hover {
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+}
+
+#card1 {
+	background-image: url("./images/cardimg3.png");
+}
+#card2 {
+	background-image: url("./images/cardimg1.png");
+}
+#card3 {
+	background-image: url("./images/cardimg4.png");
+}
+#card4 {
+	background-image: url("./images/cardimg5.png");
+}
+#card5 {
+	background-image: url("./images/creditupi.png");
+}
+
+@keyframes bounce {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 1.1;
+	}
 }
 
 .service_process {
@@ -217,179 +374,6 @@
 				visibility: hidden;
 			}
 		}
-	}
-}
-
-/* @media (max-width: ) */
-/* ** card component css */
-.service_cards_Container {
-	/* ** card component */
-
-	.plan {
-		border-radius: 9px;
-		/* box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205); */
-		padding: 4px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		/* background-color: var(--primary); */
-
-		/* box-shadow: 0 0 2px #d7d7d7; */
-
-		color: var(--background);
-		max-width: 400px;
-		/* height: 400px; */
-		width: 31%;
-	}
-
-	.plan strong {
-		font-weight: 600;
-		/* color: #425275; */
-		/* color: var(--background); */
-		/*  */
-	}
-
-	.plan .inner {
-		align-items: center;
-		background-size: cover;
-		background-position: center;
-		justify-content: space-around;
-		padding: 1rem 1.5rem;
-		/* background-color: var(--text); */
-		background-color: transparent;
-		border-radius: 5px;
-		position: relative;
-		height: 420px;
-		display: flex;
-		flex-direction: column;
-		/* background-color: rgba(0, 0, 0, 0.091); */
-	}
-
-	#card1 {
-		background-image: url("./images/cardimgop.png");
-	}
-	#card2 {
-		background-image: url("./images/cardimg1.png");
-	}
-	#card3 {
-		background-image: url("./images/cardimg4.png");
-	}
-	#card4 {
-		background-image: url("./images/cardimg5.png");
-	}
-	#card5 {
-		background-image: url("./images/cardimg2.png");
-	}
-
-	.plan .pricing small {
-		color: #707a91;
-		font-size: 0.75em;
-		margin-left: 0.25em;
-	}
-
-	.plan .title {
-		font-weight: 700;
-		font-family: "Helvetica";
-		font-size: 1.4rem;
-		text-wrap: balance;
-		margin: 1rem 0;
-		text-align: center;
-		/* color: var(--primary); */
-		color: #000;
-	}
-
-	.plan .title + * {
-		margin-top: 0.75rem;
-	}
-
-	.plan .info + * {
-		margin-top: 1rem;
-	}
-	.plan .info {
-		text-align: center;
-		text-wrap: balance;
-		margin-bottom: 1rem;
-		color: #000;
-		font-weight: 600;
-		/* color: #ffffff; */
-		/* color: var(--text); */
-	}
-	.plan .features {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
-		width: fit-content;
-		margin: 1rem auto;
-	}
-
-	.plan .features li {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
-
-	.plan .features li + * {
-		margin-top: 0.75rem;
-	}
-
-	.plan .features .icon {
-		background-color: var(--primary);
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		color: var(--primary);
-		border-radius: 50%;
-		width: 20px;
-		height: 20px;
-	}
-
-	.plan .features span {
-		/* background: linear-gradient(133deg, #5edfd3, #00f4dd); */
-		/* background-clip: text; */
-		/* color: transparent; */
-		color: #000;
-		font-family: "Helvetica";
-		> strong {
-			color: #000;
-		}
-	}
-
-	.plan .features .icon svg {
-		width: 25px;
-		height: 25px;
-	}
-
-	.plan .features + * {
-		margin-top: 1.25rem;
-	}
-
-	.plan .action {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: end;
-	}
-
-	.plan .button {
-		background-color: var(--primary);
-		border-radius: 6px;
-		color: #fcfcfc;
-		font-weight: 700;
-		font-size: 1.125rem;
-		text-align: center;
-		border: 0;
-
-		outline: 0;
-		width: 100%;
-		padding: 0.625em 0.75em;
-		text-decoration: none;
-		transition: all 0.3s;
-	}
-
-	.plan .button:hover,
-	.plan .button:focus {
-		background-color: var(--secondary);
 	}
 }
 

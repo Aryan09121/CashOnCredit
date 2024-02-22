@@ -1,5 +1,4 @@
 function SendMail() {
-	alert("Your message is being sent...");
 	let params = {
 		name: document.getElementById("name").value,
 		email_id: document.getElementById("email_id").value,
@@ -10,7 +9,7 @@ function SendMail() {
 	console.log(params);
 
 	emailjs
-		.send("service_owm44qi", "template_fnrm3xh", params)
+		.send("service_mcdudjf", "template_wyi6guz", params)
 		.then(function (res) {
 			console.log("success", res.status);
 			alert("Your message has been sent successfully");
@@ -41,7 +40,6 @@ function closePopup() {
 // Function to send WhatsApp message
 function sendMessage() {
 	// Retrieve form data
-	alert("hello started");
 	let name = document.getElementById("name").value;
 	let phone = document.getElementById("phone").value;
 	let message = document.getElementById("message").value;
@@ -66,8 +64,10 @@ function sendMessage() {
 	console.log("Sending message:", name, phone, content);
 
 	const url =
-		"https://wa.me/917509909271/?text=" + "Name: " + name + "%0D" + "Phone: " + phone + "%0D" + "\nMessage: " + message + "%0D" + "\n" + content;
+		"https://wa.me/+917084771718/?text=" + "Name: " + name + "%0D" + "Phone: " + phone + "%0D" + "\nMessage: " + message + "%0D" + "\n" + content;
 	window.open(url, "_blank");
+	const form = document.querySelector("#whatsapp-form");
+	form.reset();
 	// Close the popup after submission
 	closePopup();
 }

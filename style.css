@@ -1168,13 +1168,13 @@ button:hover {
 		}
 
 		.detbox .name.dark {
-			color: #49505a;
+			color: #030303;
 		}
 
 		.detbox .designation {
-			color: hsl(0, 0%, 81%);
-			opacity: 50%;
-			font-size: 0.8rem;
+			color: hsl(0, 0%, 3%);
+			opacity: 90%;
+			font-size: 0.9rem;
 		}
 
 		.detbox .designation.dark {
@@ -1771,6 +1771,7 @@ button:hover {
 	bottom: 2rem;
 	right: 2rem;
 	cursor: pointer;
+	z-index: 9999999;
 }
 
 .serlab {
@@ -1793,6 +1794,7 @@ button:hover {
 	border-radius: 5px;
 	padding: 20px;
 	user-select: none;
+	z-index: 999;
 }
 
 .whatsapp-popup-content {
